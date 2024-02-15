@@ -1,0 +1,77 @@
+/* index-styles.css */
+/*This is a styles page just for the index page so the pictures are lined up side to side rather than top to bottom like the other ones */
+/* Most of this is the same code as styles.css */
+body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ background-color: black;
+ color: white;
+}
+
+header {
+ background-color: maroon;
+ color: white;
+ padding: 10px;
+ text-align: center;
+}
+
+main {
+ padding: 20px;
+ text-align: center;
+}
+
+section {
+ margin-bottom: 20px;
+}
+
+footer {
+ background-color: maroon;
+ color: white;
+ padding: 10px;
+ text-align: center;
+ position: fixed;
+ bottom: 0;
+ width: 100%;
+}
+
+nav ul {
+ list-style-type: none;
+ padding: 0;
+ text-align: center;
+}
+
+nav ul li {
+ display: inline;
+ margin-right: 15px;
+}
+
+nav a {
+ text-decoration: none;
+ color: white;
+ font-weight: bold;
+ font-size: 16px;
+}
+
+
+/* Style for images in the biography section to be side by side on index.html */
+section.img-container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+section.img-container img {
+ width: 100%;
+ max-width: 200px;
+ margin-right: 100px; /* Adjust the right margin to add horizontal space between images */
+
+}
+
+
+
+section p {
+ margin-bottom: 50px; /* Adds a space below the paragraph so pictures aren't too closely spaced */
+}
+
+
