@@ -1,0 +1,125 @@
+/*  Glow Checker Styles.css */
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+}
+
+.container { /* Used to keep my title on top of everything */
+ display: flex;
+ flex-direction: column;
+ align-items: center; 
+ height: 100vh; 
+ width: 100%; 
+}
+
+h1 {
+ font-size: 40px;
+ text-align: center;
+ width: 800px;
+ color: #00ff00; /* Glow in the dark header */
+ box-shadow: 0 0 20px 10px #00ff00; /* Glow effect */
+}
+
+.game-container { /* Used to my event board and board on the bottom to be left to right */
+ order: 2; 
+ display: flex;
+ flex-direction: row; 
+ align-items: center; 
+ height: 80vh; 
+ width: 100%; 
+}
+
+.event-board-container { /* Used to display event boards from top to bottom */
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    margin-left: 100px;
+}
+
+.event-board {
+    width: 400px;
+    height: 100px;
+    margin-bottom: 100px; /* Added margin between event boards */
+    padding: 10px;
+    border: 10px solid #00ff00;
+    background-color: #000;
+    color: #00ff00;
+    box-shadow: 0 0 20px 10px #00ff00;
+}
+
+.event-board2 {
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+    border: 10px solid #00ff00;
+    background-color: #000;
+    color: #00ff00;
+    box-shadow: 0 0 20px 10px #00ff00;
+}
+
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(8, 70px);
+    grid-template-rows: repeat(8, 70px);
+    box-shadow: 0 0 20px 10px #00ff00; /* Glow effect around the board */
+}
+
+.cell {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative; /* Gives each cell appropriate size relative to the board */
+}
+
+.green {
+    background-color: #00ff00; /* Neon green */
+    color: #00ff00;
+}
+
+.black {
+    background-color: #000;
+    color: #000;
+}
+
+.glow {
+    box-shadow: 0 0 10px 7px #00ff00; /* Class that gives things it glow effect especially when you click on a checker or cell */
+}
+
+.checker {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute; /* Makes checker have an appropriate size in comparison to the board */
+    
+}
+
+.black-checker {
+ background-color: #000;
+ border: 2px solid #00ff00; /* Makes a black checker with neon green outlining it */
+}
+
+.green-checker {
+    background-color: #00ff00; /* Makes checkers  neon green */
+}
+
+.king {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 0 10px 7px #00ff00; /* Gives kings permanent glow */
+}
+
+
+
+
