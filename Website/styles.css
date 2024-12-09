@@ -8,6 +8,7 @@ body {
     color: white;
 }
 
+
 header {
     background-color: maroon;
     color: white;
@@ -16,6 +17,7 @@ header {
 }
 
 main {
+    background-color: black;
     padding: 20px;
     text-align: center;
 }
